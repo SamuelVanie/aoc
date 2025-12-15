@@ -1,0 +1,8 @@
+{
+  "name": "cobol-language-support",
+  "command": ["cobol-language-support"],
+  "languageId": "cobol",
+  "host": "127.0.0.1",
+  "port": "1044",
+  "settings" : {}
+}
