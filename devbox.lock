@@ -1,54 +1,6 @@
 {
   "lockfile_version": "1",
   "packages": {
-    "emacsPackages.cobol-mode@latest": {
-      "last_modified": "2025-11-23T21:50:36Z",
-      "resolved": "github:NixOS/nixpkgs/ee09932cedcef15aaf476f9343d1dea2cb77e261#emacsPackages.cobol-mode",
-      "source": "devbox-search",
-      "version": "1.1",
-      "systems": {
-        "aarch64-darwin": {
-          "outputs": [
-            {
-              "name": "out",
-              "path": "/nix/store/gc6f7c2hfa0l905x18qmaxk1sqvhm9bl-emacs-cobol-mode-1.1",
-              "default": true
-            }
-          ],
-          "store_path": "/nix/store/gc6f7c2hfa0l905x18qmaxk1sqvhm9bl-emacs-cobol-mode-1.1"
-        },
-        "aarch64-linux": {
-          "outputs": [
-            {
-              "name": "out",
-              "path": "/nix/store/csv0qrgn0pfkjpfsdk73fkd1fd5klyva-emacs-cobol-mode-1.1",
-              "default": true
-            }
-          ],
-          "store_path": "/nix/store/csv0qrgn0pfkjpfsdk73fkd1fd5klyva-emacs-cobol-mode-1.1"
-        },
-        "x86_64-darwin": {
-          "outputs": [
-            {
-              "name": "out",
-              "path": "/nix/store/4mafgrgbp2fxxpdn4mg1jmh4c3kyvkx3-emacs-cobol-mode-1.1",
-              "default": true
-            }
-          ],
-          "store_path": "/nix/store/4mafgrgbp2fxxpdn4mg1jmh4c3kyvkx3-emacs-cobol-mode-1.1"
-        },
-        "x86_64-linux": {
-          "outputs": [
-            {
-              "name": "out",
-              "path": "/nix/store/a0fx8vj9mg8yxfjj1p7j6fwa0w0csrbx-emacs-cobol-mode-1.1",
-              "default": true
-            }
-          ],
-          "store_path": "/nix/store/a0fx8vj9mg8yxfjj1p7j6fwa0w0csrbx-emacs-cobol-mode-1.1"
-        }
-      }
-    },
     "gnu-cobol@latest": {
       "last_modified": "2024-09-17T14:38:52Z",
       "resolved": "github:NixOS/nixpkgs/658e7223191d2598641d50ee4e898126768fe847#gnu-cobol",
