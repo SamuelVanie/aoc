@@ -1,1 +1,1 @@
-(require 'cobol-mode)
+(require 'cobol-ts-mode)
