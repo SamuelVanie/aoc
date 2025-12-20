@@ -9,6 +9,6 @@
 		   (lsp-register-client
 		    (make-lsp-client :new-connection
 				     (lsp-stdio-connection
-				      '("cobol-language-support" "pipeEnabled"))
+				      '("cobol-language-support" "pipeEnabled" "-Dline.separator=\r\n" "-Dlogback.statusListenerClass=ch.qos.logback.core.status.NopStatusListener" "-DserverType=NATIVE"))
 				     :priority 4 :activation-fn (lsp-activate-on "cobol")
 				     :server-id 'cobol-lsp)))))))
