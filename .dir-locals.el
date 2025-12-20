@@ -1,11 +1,15 @@
 ;;; Directory Local Variables            -*- no-byte-compile: t -*-
 ;;; For more information see (info "(emacs) Directory Variables")
 
-((nil . ((eval . (enable-lsp-bridge))
-	 (eval . (when (boundp 'lsp-bridge-single-lang-server-mode-list)
-		   (add-to-list 'lsp-bridge-single-lang-server-mode-list
-				'((cobol-mode cobol-ts-mode) . "cobol-language-support"))))
-	 (eval . (when (boundp 'lsp-bridge-single-lang-server-extension-list)
-		   (add-to-list 'lsp-bridge-single-lang-server-extension-list
-				'(("cbl" "cob" "cpy") . "cobol-language-support"))))
+((nil . ((eval . (progn
+		   (require 'lsp)
+                   (add-to-list 'lsp-language-id-configuration '(cobol-ts-mode . "cobol"))
+		   (add-to-list 'lsp-language-id-configuration '(".*\\.cob" . "cobol"))
+		   (lsp-register-client (make-lsp-client
+		     :new-connection (lsp-stdio-connection '("cobol-language-support" "pipeEnabled"))
+		     :priority 4
+		     :activation-fn (lsp-activate-on "cobol")
+		     :server-id 'cobol-lsp))
+		   )
+	       )
 	 )))
